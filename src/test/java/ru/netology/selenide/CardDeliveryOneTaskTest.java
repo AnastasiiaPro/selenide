@@ -19,7 +19,7 @@ public class CardDeliveryOneTaskTest {
 
     @Test
     public void shouldTestCardDelivery() {
-        Selenide.open("http://127.0.0.1:9999/");
+        Selenide.open("http://localhost:9999/");
         $("[data-test-id='city'] input").setValue("Новосибирск");
         String planDate = generateDate(5, "dd.MM.yyyy");
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.DELETE);
